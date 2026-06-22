@@ -45,7 +45,7 @@ Here is the step-by-step process of how Linux boots up:
 
 ### Built-in Commands
 Commands like `cd`, `echo`, `pwd`, `alias`, and `history` are built into the shell and do not have manual pages.
-*(Note: RTFM stands for "Read the f***ing manual"!)*
+> *(Note: RTFM stands for "Read the f***ing manual"!)*
 
 ### File & Directory Operations
 *   `mkdir`: Make a new directory.
@@ -53,7 +53,7 @@ Commands like `cd`, `echo`, `pwd`, `alias`, and `history` are built into the she
 *   `cp`: Copy a file or directory from source to destination.
 *   `mv`: Move a file/directory or rename it.
 *   `rm`: Remove a file or directory (`rmdir` for directories).
-*   `cat`: Concatenate a file and print it on the standard output (stdout).
+*   `cat`: Concatenate files and print on the standard output (stdout).
 
 ### System & Network Information
 *   `ip addr`: Check the IP address of the system.
@@ -68,7 +68,7 @@ Commands like `cd`, `echo`, `pwd`, `alias`, and `history` are built into the she
 *   `ps`: Provides a static snapshot of processes at the moment the command is executed.
 *   `ps aux`: Shows all processes in BSD syntax.
 *   `top`: Provides a dynamic, real-time view of running processes (like Windows Task Manager).
-*   *Note: `htop` can be used instead of `top`.*
+*   > Note: `htop` can be used instead of `top`.*
 *   `kill <pid>`: Used to terminate a process.
 *   `kill -9 <pid>`: Sends a SIGKILL signal to forcefully terminate a process.
 
