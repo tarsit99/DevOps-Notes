@@ -1,4 +1,4 @@
-# Introduction to DevOps & System Foundations
+# Introduction to DevOps & Cloud
 
 ## 🎯 Core Principles & Mission
 - **Mission:** To take India forward in the IT sector by improving employability and taking it higher.
