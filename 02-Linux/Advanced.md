@@ -67,5 +67,5 @@
 ## 📚 6. Essential DevOps Terminology
 * **Fork vs. Clone:**
     * **Clone:** Makes a local copy of a remote repository on your local machine, typically used for teamwork.
-    * **Fork:** Creates your own copy of someone else's repository under your GitHub account, typically used for open-source contributions.
+    * **Fork:** Creates your own copy of someone else's remote repository under your GitHub account, typically used for open-source contributions.
 * **Runbook:** A short, repeatable checklist followed during an incident. It details the exact command to run, what to observe, and the next action plan if the issue persists.
