@@ -6,7 +6,7 @@
 * **The Key Pair:** SSH utilizes two keys (a pair).
     * **Private Key:** Stored locally on the source machine (Server a).
     * **Public Key:** Stored on the destination/cloud instance (Server b, e.g., EC2).
-* *Analogy:* Think of the local machine as "Ram ji", the destination server as "Sita ji" (Lanka), and the private key/ring carried by "Hanuman ji" connecting them.
+> *Analogy:* Think of the local machine as "Ram ji", the destination server as "Sita ji" (Lanka), and the private key/ring carried by "Hanuman ji" connecting them.
 * **Connecting to an EC2 Instance:** You can connect via browser-based client, Session Manager, SSH Client, or EC2 serial console.
     * To connect via SSH client: Download the `.pem` file -> Open terminal/GitBash -> Change permissions with `chmod 400 <pem-file.pem>` -> Connect using `ssh -i <pem-file.pem> ubuntu@<public-dns/public IP>`.
 * **Key Storage & Management:**
@@ -14,7 +14,7 @@
     * The `authorized_keys` file holds the public keys.
     * SSH key configuration files are stored in `/etc/ssh/sshd_config`.
     * The `ssh-keygen` command is used to generate (both keys), manage, and convert auth keys for SSH protocols.
-* **Bastion Host:** Also known as a "Jump Server" or "Jump Box", this is a special type of server placed in a public subnet or DMZ that provides a secure entry point for DevOps engineers to access private/internal production servers.
+> **Bastion Host:** Also known as a "Jump Server" or "Jump Box", this is a special type of server placed in a public subnet or DMZ that provides a secure entry point for DevOps engineers to access private/internal production servers.
 
 ## 📦 2. Package Management
 * **Package Installers:** Used to install packages (like Nginx or Docker) in the Linux OS.
