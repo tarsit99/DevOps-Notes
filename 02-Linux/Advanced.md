@@ -40,7 +40,7 @@
 * **User Commands:** Use `useradd` (creates a user or updates default info), `userdel`, and `passwd` (changes user password).
     * *Example:* `sudo useradd -m berlin` adds a new user and creates their home directory. `sudo passwd berlin` sets user "berlin" password.
     * To specify a shell during creation: Use `which bash` to find the path (e.g., `/usr/bin/bash`), then run `sudo useradd -m tokyo -s /usr/bin/bash`.
-* **Group Commands:** `groupadd`, `gpasswd` (administers `/etc/group` and `/etc/gshadow`), and `usermod` (modifies user accounts and system files).
+* **Group Commands:** `groupadd`, `gpasswd` (administers `/etc/group` and `/etc/gshadow`), and `usermod` (modify a user account).
     * *Example:* `sudo groupadd devops` creates a group, and `sudo gpasswd -a tokyo devops` adds user "tokyo" to it.
     * **Docker Group Example:** If `docker ps` gives a "permission denied" error, don't use `sudo` every time. Instead, append the user to the docker group without removing existing memberships using `sudo usermod -aG docker ubuntu`. Run `newgrp docker` to refresh policies.
 
