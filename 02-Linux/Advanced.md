@@ -42,7 +42,7 @@
     * To specify a shell during creation: Use `which bash` to find the path (e.g., `/usr/bin/bash`), then run `sudo useradd -m tokyo -s /usr/bin/bash`.
 * **Group Commands:** `groupadd`, `gpasswd` (administers `/etc/group` and `/etc/gshadow`), and `usermod` (modify a user account).
     * *Example:* `sudo groupadd devops` creates a group, and `sudo gpasswd -a tokyo devops` adds user "tokyo" to it.
-    * **Docker Group Example:** If `docker ps` gives a "permission denied" error, don't use `sudo` every time. Instead, append the user to the docker group without removing existing memberships using `sudo usermod -aG docker ubuntu`. Run `newgrp docker` to refresh policies.
+    * **Docker Group Example:** If `docker ps` gives a "permission denied" error, use `sudo docekr ps`. However if don't want to  use `sudo` every time. Instead, append the user to the docker group without removing existing memberships using `sudo usermod -aG docker ubuntu`. Run `newgrp docker` to refresh policies.
 
 ## 📂 4. File Management, Permissions & Ownership
 * **Basic Actions:** Read using `cat`, write using `vim` or `nano`, and execute a shell/executable file using `./`.
