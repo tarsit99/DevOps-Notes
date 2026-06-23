@@ -37,8 +37,8 @@
     * `/etc/group`: Contains information about multiple users in a group, allowing for bulk permissions.
     * `/etc/gshadow`: Stores encrypted passwords and secure info for groups.
     * `/etc/sudoers`: File used to restrict or define `sudo` permissions.
-* **User Commands:** Use `useradd` (creates a user or updates default info), `userdel`, and `passwd` (changes password).
-    * *Example:* `sudo useradd -m berlin` adds a new user and creates their home directory. `sudo passwd berlin` sets their password.
+* **User Commands:** Use `useradd` (creates a user or updates default info), `userdel`, and `passwd` (changes user password).
+    * *Example:* `sudo useradd -m berlin` adds a new user and creates their home directory. `sudo passwd berlin` sets user "berlin" password.
     * To specify a shell during creation: Use `which bash` to find the path (e.g., `/usr/bin/bash`), then run `sudo useradd -m tokyo -s /usr/bin/bash`.
 * **Group Commands:** `groupadd`, `gpasswd` (administers `/etc/group` and `/etc/gshadow`), and `usermod` (modifies user accounts and system files).
     * *Example:* `sudo groupadd devops` creates a group, and `sudo gpasswd -a tokyo devops` adds user "tokyo" to it.
